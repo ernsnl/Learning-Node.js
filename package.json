@@ -1,6 +1,6 @@
 {
   "name": "LearningNodeJS",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -27,5 +27,9 @@
     "lodash": "^4.15.0",
     "pug": "^2.0.0-beta6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0"
+  }
 }

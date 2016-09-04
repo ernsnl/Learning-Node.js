@@ -7,6 +7,7 @@ var result = index.callResult();
 app.set('views', './views');
 app.set('view engine', 'pug');
 
+app.use('/lib', express.static('bower_components'));
 app.use(express.static('public'));
 
 

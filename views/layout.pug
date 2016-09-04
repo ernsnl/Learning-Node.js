@@ -1,10 +1,18 @@
 html
   head
     title= 'Learning Node JS'
-    block scripts
-      script(src='/js/main.js')
     block styles
       link(href='/style/style.css', rel='stylesheet')
+      link(href='/lib/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
   body
-    block content
+    div(class='container')
+      div(class='row')
+        div(class='col-xs-12')
+        block content
+
+
     block foot
+
+    block scripts
+      script(src='/build/main.min.js')
+      script(src='/lib/jquery/dist/jquery.min.js')
