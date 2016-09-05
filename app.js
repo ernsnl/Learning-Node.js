@@ -1,3 +1,6 @@
+require('./app/firebase/fireBase.js');
+
+
 var express = require('express');
 var app = express();
 

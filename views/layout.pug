@@ -11,8 +11,18 @@ html
         block content
 
 
-    block foot
-
-    block scripts
-      script(src='/build/main.min.js')
-      script(src='/lib/jquery/dist/jquery.min.js')
+  block foot
+  block scripts
+    script(src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js")
+    script.
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAMbFkTm2r6ty6UV4hvrJZLrXRpqKji8Hc",
+          authDomain: "learningnodejs-a4e65.firebaseapp.com",
+          databaseURL: "https://learningnodejs-a4e65.firebaseio.com",
+          storageBucket: "learningnodejs-a4e65.appspot.com",
+        };
+        firebase.initializeApp(config);
+    script(src='/build/firebase_auth.min.js')
+    script(src='/build/main.min.js')
+    script(src='/lib/jquery/dist/jquery.min.js')
