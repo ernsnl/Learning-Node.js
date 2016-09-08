@@ -3,4 +3,8 @@ extends ../layout.pug
 block content
   div(class='row')
     div(class='col-xs-12')
-      h1= message
+      div(id='SearchMap')
+
+
+append scripts
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMbFkTm2r6ty6UV4hvrJZLrXRpqKji8Hc&callback=getLocation")
