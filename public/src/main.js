@@ -40,6 +40,25 @@ function getMaps() {
 
 };
 
+function getAjax() {
+    console.log('Ajax Init');
+    $.ajax({
+        url: '/tweets',
+        method: 'GET',
+        data: {
+            id: '1'
+        },
+        success: function(response) {
+            console.log(response);
+        },
+        error: function(response){
+          console.log(response);
+        }
+
+
+    });
+};
+
 function initMap() {
     // Styles Thank you for https://snazzymaps.com/style/70/unsaturated-browns
     // Simon Goellner

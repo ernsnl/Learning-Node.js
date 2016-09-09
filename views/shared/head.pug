@@ -11,7 +11,7 @@ nav(class='navbar navbar-default navbar-fixed-top')
       ul(class='nav navbar-nav')
         each val in links
           li
-            a(href='#')= 'Link ' + val
+            a(href='javascript:getAjax()')= 'Link ' + val
       ul(class='nav navbar-nav navbar-right')
         each val in links
           li

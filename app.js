@@ -19,6 +19,10 @@ app.get('/', function (req, res) {
   res.render('index', {message : result, links: ['aaa', 'bbb']});
 });
 
+app.get('/tweets', function(req,res){
+  var id = req.query.id;
+  res.send('Hello World!' + id);
+});
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
