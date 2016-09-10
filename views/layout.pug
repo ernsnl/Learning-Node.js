@@ -3,6 +3,7 @@ html
         title= 'Learning Node JS'
         block styles
             link(href='/lib/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+            link(href='/lib/font-awesome/css/font-awesome.min.css', rel='stylesheet')
             link(href='/style/style.css', rel='stylesheet')
     body
       include shared/head.pug
@@ -24,5 +25,6 @@ html
             firebase.initializeApp(config);
         script(src='/build/firebase_auth.min.js')
         script(src='/build/main.min.js')
+        script(src='/build/searchIt.min.js')
         script(src='/lib/jquery/dist/jquery.min.js')
         script(src='/lib/bootstrap/dist/js/bootstrap.min.js')

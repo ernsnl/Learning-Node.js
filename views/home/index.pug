@@ -1,10 +1,18 @@
 extends ../layout.pug
 
 block content
-  div(class='row')
-    div(class='col-xs-12')
-      div(id='SearchMap')
+    div(class='row')
+        div(class='col-xs-12')
+
+        div(id='SearchDiv')
+            input(type='text' placeholder='Search Before Go' id='SearchBeforeGoBox')
+            div(id='checkbox-container')
+              each val in api
+                label
+                  input(type='checkbox' name='checkbox' class='hidden' id=val value= 'value')
+                  i(class='fa fa-' + val + ' fa-2x')
+        div(id='SearchMap')
 
 
 append scripts
-  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMbFkTm2r6ty6UV4hvrJZLrXRpqKji8Hc&callback=getLocation")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMbFkTm2r6ty6UV4hvrJZLrXRpqKji8Hc&callback=getLocation&libraries=places")

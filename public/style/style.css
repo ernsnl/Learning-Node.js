@@ -1,7 +1,47 @@
-body{
-  padding-top:70px;
+body {
+    padding-top: 70px;
 }
 
-#SearchMap{
-  height:100%;
+#SearchMap {
+    height: 100%;
+    width: 100%;
+}
+
+#SearchDiv {
+    width: 75%;
+    right: 0;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#SearchBeforeGoBox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#checkbox-container {
+    margin: 0 auto;
+}
+
+#checkbox-container> label {
+    padding: 5px;
+    background-color: white;
+    margin-right: 5px;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    #SearchDiv {
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #SearchDiv {
+        width: 33%;
+    }
 }
