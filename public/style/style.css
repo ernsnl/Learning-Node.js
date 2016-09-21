@@ -33,6 +33,10 @@ body {
     cursor: pointer;
 }
 
+#checkbox-container> label.active {
+    color: #ff4400;
+}
+
 @media screen and (min-width: 992px) {
     #SearchDiv {
         width: 50%;
